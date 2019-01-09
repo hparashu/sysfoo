@@ -40,9 +40,3 @@ jobs:
       # run tests!
       - run: mvn integration-test
 
-test:
-  override:
-    - mvn package
-
-  post:
-    - mv target/*.war $CIRCLE_ARTIFACTS/
